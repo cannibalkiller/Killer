@@ -152,7 +152,7 @@ wait = {
     'autoLeave':False,
     'autoLeave1':False,
     "detectMention":False,
-    "mentionKick":False,,
+    "mentionKick":False,
     "sticker":False,
     "welcomeOn":True,
     "likeOn":True,
@@ -813,17 +813,19 @@ def bot(op):
                                         kc.cancelGroupInvitation(op.param1,[_mid])
                                 except:
                                     pass
-
+                                        
         if op.type == 13:
-            if waitt["protectinvite"] == True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
-                        group = random.choice(ABC).getGroup(op.param1)
-                        gMembMids = [contact.mid for contact in group.invitee]
-                        for _mid in gMembMids:
-                            random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
-                    except:
-                        pass
+            if wait["protectinvite"] == True:
+                try:
+                    if random.choice(ABC).getGroup(op.param1).preventedJoinByTicket == False:
+                        if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
+                            random.choice(ABC).reissueGroupTicket(op.param1)
+                            X = random.choice(ABC).getGroup(op.param1)
+                            X.preventedJoinByTicket = True
+                            random.choice(ABC).updateGroup(X)                            
+                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                except:
+                    pass
 
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
