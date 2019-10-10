@@ -123,7 +123,7 @@ settings = {
 }
 
 wait = {
-    "Limit": 1
+    "Limit": 1,
     "owner":{},
     "admin":{},
     "addadmin":False,
