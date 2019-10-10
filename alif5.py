@@ -123,7 +123,7 @@ settings = {
 }
 
 wait = {
-    "Limit": 1,
+    "Limit": 1
     "owner":{},
     "admin":{},
     "addadmin":False,
@@ -133,6 +133,8 @@ wait = {
     "dellstaff":False,
     "bots":{},
     "addbots":False,
+    "qr":True,
+    "protectinvite":True,
     "dellbots":False,
     "blacklist":{},
     "wblacklist":False,
@@ -144,15 +146,13 @@ wait = {
     "contact":False,
     "invite":False,
     'autoJoin':True,
-    'protectinvite':True,
-    'qr':True
     'autoAdd':False,
     'autoBlock':False,
     'Timeline':True,
     'autoLeave':False,
     'autoLeave1':False,
     "detectMention":False,
-    "mentionKick":False,
+    "mentionKick":False,,
     "sticker":False,
     "welcomeOn":True,
     "likeOn":True,
