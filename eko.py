@@ -30,10 +30,10 @@ print("\nBOT MULAI BERJALAN.......\n")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u8d204339d1e51ec53cbe214e7042ece9"]
-owner = ["u8d204339d1e51ec53cbe214e7042ece9"]
-admin = ["u8d204339d1e51ec53cbe214e7042ece9"]
-staff = ["u8d204339d1e51ec53cbe214e7042ece9"]
+creator = ["ue84fa334a496ed189846c43d2a42ede3"]
+owner = ["ue84fa334a496ed189846c43d2a42ede3"]
+admin = ["ue84fa334a496ed189846c43d2a42ede3"]
+staff = ["ue84fa334a496ed189846c43d2a42ede3"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 KAC = [cl]
